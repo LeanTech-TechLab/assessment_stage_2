@@ -1,0 +1,22 @@
+<div class="card">
+  <div class="card__header">
+    <div class="card__title-subtitle">
+      <span>{{article.title}}</span>
+      <span>Journal: {{article.journal}}</span>
+    </div>
+    <div class="card__close">
+      x
+    </div>
+  </div>
+  <div class="card__image-container">
+    <img [src]="getImageSource()" alt="">
+  </div>
+  <div class="card__abstract">
+    {{article.abstract | slice: 0: 500}}
+  </div>
+  <div class="card__buttons">
+    <button *ngIf="!article.isEditing" mat-flat-button color="primary" (click)="editArticle()">Edit</button>
+    <button mat-flat-button color="accent">Show Abstract</button>
+    <button *ngIf="article.isEditing" mat-flat-button color="warn">Cancel</button>
+  </div>
+</div>

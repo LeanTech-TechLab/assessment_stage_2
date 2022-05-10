@@ -1,0 +1,9 @@
+<div class="container">
+  <div>
+    <app-form [editingArticle]="editingArticle"></app-form>
+  </div>
+  <div class="container__articles">
+    <app-card class="container__card" *ngFor="let article of articleList" [article]="article"
+    (editArticleEmitter)="editArticle($event)"></app-card>
+  </div>
+</div>

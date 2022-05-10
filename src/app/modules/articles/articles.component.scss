@@ -1,0 +1,12 @@
+.container {
+  .container__articles{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  .container__card {
+    flex: 0 1 24%;
+  }
+}
