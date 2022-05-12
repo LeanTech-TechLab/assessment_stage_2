@@ -15,7 +15,7 @@ import { ToolbarComponent } from "./components/toolbar/toolbar.component";
     AngularMaterialModule,
     RouterModule,
     MainRoutingModule,
-    CommonModule
+    CommonModule,
   ],
   providers: [
     {

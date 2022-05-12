@@ -35,7 +35,7 @@ const routes: Routes = [
           import("../../modules/section3/section3.module").then(
             (m) => m.Section3Module
           ),
-      }
+      },
     ],
   },
 ];
